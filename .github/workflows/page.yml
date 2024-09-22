@@ -48,6 +48,7 @@ jobs:
         working-directory: myBlog
       - name: Build
         run: npm run build
+        working-directory: myBlog
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
