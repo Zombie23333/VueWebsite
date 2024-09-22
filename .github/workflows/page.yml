@@ -45,7 +45,7 @@ jobs:
 
       - name: Display Files
         run: ls -al myBlog
-        
+
       - name: Display Hexo Configuration
         run: cat myBlog/_config.yml
 
@@ -57,5 +57,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ github.token }}
-          publish_dir: myBlog/public
+          publish_dir: myBlog
           force_orphan: true
