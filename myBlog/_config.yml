@@ -23,7 +23,7 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: myBlog
+public_dir: docs
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -104,5 +104,5 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/Zombie23333/VueWebsite.git
-  branch: gh-pages
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  branch: main
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}" 中 
