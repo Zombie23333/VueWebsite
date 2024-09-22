@@ -42,8 +42,13 @@ jobs:
       - name: Install Dependencies
         run: npm ci
         working-directory: myBlog
+
+      - name: Display Files
+        run: ls -al myBlog
+        
       - name: Display Hexo Configuration
         run: cat myBlog/_config.yml
+
       - name: Generate Static Files
         run: npx hexo generate
         working-directory: myBlog
