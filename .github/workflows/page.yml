@@ -43,8 +43,6 @@ jobs:
         run: npm ci
         working-directory: myBlog
 
-      - name: Display Files
-        run: ls -al myBlog
 
       - name: Display Hexo Configuration
         run: cat myBlog/_config.yml
@@ -59,3 +57,6 @@ jobs:
           github_token: ${{ github.token }}
           publish_dir: myBlog
           force_orphan: true
+        
+      - name: Display Files
+        run: ls -al myBlog
